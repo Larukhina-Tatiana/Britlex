@@ -1,0 +1,123 @@
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+
+    padding: 35px 20px;
+
+    background-color: $white;
+    z-index: 2;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    & .menu-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+
+// Кнопки бургера
+.menu-toggle {
+    min-height: 34px;
+    min-width: 19px;
+
+    // position: absolute;
+    // top: 46px;
+    // right: 15px;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+
+
+    // &:hover &__icon-cross,
+    // &:focus &__icon-cross,
+    // &:hover &__icon-menu,
+    // &:focus &__icon-menu {
+    //     fill: $accent-color;
+    //     @include transition($transition-property: fill);
+    // }
+
+    &__icon-cross {
+        fill: $icons;
+    }
+}
+
+
+//  Ul Студия портфолио контакты
+.menu {
+    &__item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        display: inline-block;
+        @include font-style($font-weight: 400, $font-size: 6vw, $line-height: calc(14/8), $color: $icons, $background-color: null);
+        // &--active,
+        // &--accent:hover,
+        // &--accent:focus {
+        //     color: $accent-color;
+        // }
+    }
+
+    
+}
+
+@media (min-width: $tablet) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: $mobile) {
+    .menu-container {
+        padding: 48px 40px;
+    }
+
+    .menu {
+        margin-bottom: 130px;
+
+        // &__item:not(:last-child) {
+        //     margin-bottom: 32px;
+        // }
+
+        // &__link {
+        //     @include font-style($font-family: null, $font-weight: null, $font-size: 40px, $line-height: calc(47/40), $letter-spacing: null, $color: null);
+        // }
+
+        // &__contacts-list {
+
+        //     &__link {
+        //         @include font-style($font-family: null, $font-weight: null, $font-size: 34px, $line-height: calc(40/34), $letter-spacing: null, $color: null, $background-color: null);
+
+        //         &--style {
+        //             font-size: 24px;
+        //             color: $priority-text-color;
+        //             line-height: calc(28/24);
+        //         }
+        //     }
+        // }
+    }
+}

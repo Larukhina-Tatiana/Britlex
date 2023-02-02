@@ -1,0 +1,25 @@
+.hero {
+    padding-bottom: 51px;
+    text-align: center;
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: calc(36/24);
+        color: $black;
+
+        margin: 16px 0 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: calc(21/14);
+        margin-bottom: 35px;
+    }
+
+    & &--button {
+        width: 289px;
+        height: 60px;
+        margin: 0;
+    }
+}

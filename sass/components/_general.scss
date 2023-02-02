@@ -1,0 +1,9 @@
+body {
+    @include font-style ($font-family: 'Poppins, Arial, sans-serif', $font-style: normal, $font-weight: 400, $font-size: 13px, $line-height: calc(20/13), $color: $p-color);
+}
+
+// .container {
+//     width: 1338px;
+//     margin: auto;
+// }
+

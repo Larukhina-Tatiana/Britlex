@@ -1,0 +1,36 @@
+.pricing {
+
+    text-align: center;
+
+    font-size: 14px;
+    line-height: calc(21/14);
+
+    &__item {
+        @media screen and (max-width: 320px) {
+            &:not(:last-child) {
+                margin-bottom: 63px;
+            }
+        }
+
+    }
+
+    &__btn {
+        width: 170px;
+        height: 37px;
+        margin: 20px auto;
+
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+
+        background: $prices_btn;
+        border-radius: 5px;
+
+        &-price {
+            font-size: 18px;
+            line-height: calc(27/18);
+            color: $buttons;
+        }
+    }
+}
