@@ -220,8 +220,7 @@ body {
 .container {
   padding: 15px;
   width: 100%;
-  margin: auto;
-  background-color: aquamarine;
+  margin: 0 auto;
 }
 @media screen and (min-width: 320px) {
   .container {
@@ -334,6 +333,7 @@ body {
   }
 }
 .hero {
+  margin: 0 auto;
   padding-bottom: 51px;
   text-align: center;
 }
@@ -344,6 +344,11 @@ body {
   color: #000000;
   margin: 16px 0 20px;
 }
+@media screen and (max-width: 320px) {
+  .hero__title {
+    padding: 0 50px;
+  }
+}
 .hero__text {
   font-size: 14px;
   line-height: 1.5;
@@ -353,6 +358,51 @@ body {
   width: 289px;
   height: 60px;
   margin: 0;
+}
+@media screen and (min-width: 575px) {
+  .hero__title {
+    font-size: 34px;
+    line-height: 1.3235294118;
+  }
+  .hero__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+  }
+  .hero .hero--button {
+    width: 305px;
+    height: 75px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hero {
+    text-align: left;
+  }
+  .hero .container {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+  .hero__title {
+    position: relative;
+    width: 217px;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  .hero__img {
+    width: 48px;
+    height: 58px;
+  }
+  .hero__text {
+    width: 334px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .hero .hero--button {
+    width: 236px;
+    height: 65px;
+    margin: 0;
+  }
 }
 
 .button {
@@ -366,9 +416,20 @@ body {
   color: #FFFFFF;
   border-radius: 5px;
 }
+.button:hover, .button:focus {
+  background: #2A3246;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .skills {
   padding-bottom: 50px;
+}
+.skills .h3 {
+  padding-left: 13px;
+}
+.skills__list {
+  margin-top: 32px;
 }
 .skills__item {
   background: #F5F5F5;
@@ -404,7 +465,7 @@ body {
 }
 @media screen and (max-width: 320px) {
   .about-us__item:not(:last-child) {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 }
 .about-us__item-num {
@@ -418,6 +479,7 @@ body {
   text-align: center;
   font-size: 14px;
   line-height: 1.5;
+  padding-bottom: 72px;
 }
 @media screen and (max-width: 320px) {
   .pricing__item:not(:last-child) {
@@ -439,4 +501,81 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #263238;
+}
+.pricing__btn:hover, .pricing__btn:focus {
+  background: #939393;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-us {
+  padding-bottom: 58px;
+  text-align: center;
+}
+.contact-us .h2 {
+  margin-bottom: 38px;
+}
+.contact-us p {
+  margin-top: 38px;
+  margin-bottom: 31px;
+}
+
+.form-mail {
+  width: 100%;
+}
+.form-mail__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #8F95A5;
+  border-radius: 5px;
+  padding: 16px 0 16px 26px;
+  margin-bottom: 16px;
+}
+.form-mail__input:hover, .form-mail__input:focus {
+  border: 1px solid #263238;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-mail__button {
+  width: 100%;
+  height: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  background: #263238;
+  border-radius: 5px;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-mail__button:hover, .form-mail__button:focus {
+  background: #2A3246;
+}
+
+.footer {
+  padding-bottom: 48px;
+}
+.footer__logo {
+  padding: 26px 125px 15px 126px;
+}
+.footer__list {
+  display: flex;
+  gap: 1px;
+  justify-content: space-between;
+}
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.footer__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4545454545;
+  color: #8F95A5;
+}
+.footer__link:hover, .footer__link:focus {
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */

@@ -17,7 +17,7 @@
                 <a class="logo" href=""><span class="logo__accent">Brit</span>lex</a>
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg width="34" height="19" aria-label="Перемикач мобільного меню">
-                        <use href="./images/icon/icons.svg#icon-icon-open"></use>
+                        <use href="./images/icon/icons.svg#icon-open"></use>
                     </svg>
                 </button>
             </div>
@@ -76,34 +76,53 @@
         <section class="hero">
             <div class="container">
                 <picture>
-                    <!-- ПК -->
-                    <!-- <source srcset="
-                      ./images/studio/team/d-team-card-1@1x.webp 270w,
-                      ./images/studio/team/d-team-card-1@2x.webp 540w,
-                      ./images/studio/team/d-team-card-1@3x.webp 810w
-                    " type="image/webp" media="(min-width: 1200px)"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" />
-                <source srcset=" -->
-                    <!-- ./images/studio/team/d-team-card-1@1x.jpg 270w,
-                      ./images/studio/team/d-team-card-1@2x.jpg 540w,
-                      ./images/studio/team/d-team-card-1@3x.jpg 810w
-                    " media="(min-width: 1200px)"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" /> -->
-                    <!-- Планшет -->
-                    <!-- <source srcset="
-                      ./images/studio/team/t-team-card-1@1x.webp  354w,
-                      ./images/studio/team/t-team-card-1@2x.webp  708w,
-                      ./images/studio/team/t-team-card-1@3x.webp 1062w
-                    " type="image/webp" media="(min-width: 768px)"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" />
-                <source srcset="
-                      ./images/studio/team/t-team-card-1@1x.jpg  354w,
-                      ./images/studio/team/t-team-card-1@2x.jpg  708w,
-                      ./images/studio/team/t-team-card-1@3x.jpg 1062w
-                    " media="(min-width: 768px)"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px" /> -->
+                    <!-- 1334
+                     -->
+                    <source srcset="
+                    ./images/1334/hero/hero@1x.webp 660w,
+                    ./images/1334/hero/hero@2x.webp 1322w,
+                    ./images/1334/hero/hero@3x.webp 1982w
+                    " type="image/webp" media="(min-width: 1334px)" sizes="(min-width: 1334px) 460px" />
+                    <source srcset="
+                    ./images/1334/hero/hero@1x.png 660w,
+                    ./images/1334/hero/hero@2x.png 1322w,
+                    ./images/1334/hero/hero@3x.png 1982w 
+                    " media="(min-width: 1334px)" sizes="(min-width: 1334px) 660px" />
+                    <!-- 992 -->
+                    <source srcset="
+                    ./images/992/hero/hero@1x.webp 460w,
+                    ./images/992/hero/hero@2x.webp 920w,
+                    ./images/992/hero/hero@3x.webp 1380w
+                    " type="image/webp" media="(min-width: 992px)" sizes="(min-width: 992px) 460px" />
+                    <source srcset="
+                    ./images/992/hero/hero@1x.png 460w,
+                    ./images/992/hero/hero@2x.png 920w,
+                    ./images/992/hero/hero@3x.png 1380w 
+                    " media="(min-width: 992px)" sizes="(min-width: 992px) 460px" />
+                    <!-- 767 -->
+                    <source srcset="
+                    ./images/767/hero/hero@1x.webp 352w,
+                    ./images/767/hero/hero@2x.webp 704w,
+                    ./images/767/hero/hero@3x.webp 1056w
+                    " type="image/webp" media="(min-width: 767px)" sizes="(min-width: 767px) 352px" />
+                    <source srcset="
+                    ./images/767/hero/hero@1x.png 352w,
+                    ./images/767/hero/hero@2x.png 704w,
+                    ./images/767/hero/hero@3x.png 1056w 
+                    " media="(min-width: 767px)" sizes="(min-width: 767px) 352px" />
+                    <!-- 575 -->
+                    <source srcset="
+                    ./images/575/hero/hero@1x.webp 424w,
+                    ./images/575/hero/hero@2x.webp 848w,
+                    ./images/575/hero/hero@3x.webp 1272w
+                    " type="image/webp" media="(min-width: 575px)" sizes="(min-width: 575px) 424px" />
+                    <source srcset="
+                    ./images/575/hero/hero@1x.png 424w,
+                    ./images/575/hero/hero@2x.png 848w,
+                    ./images/575/hero/hero@3x.png 1272w 
+                    " media="(min-width: 575px)" sizes="(min-width: 575px) 424px" />
 
-                    <!-- Мобильный -->
+                    <!-- 320 -->
                     <source srcset="
                     ./images/320/hero/hero@1x.webp 298w,
                     ./images/320/hero/hero@2x.webp 598w,
@@ -116,15 +135,20 @@
                     " src="./images/320/hero/hero@1x.png" alt="Learn Any Foreign Language"
                         sizes="(min-width: 320px) 298px" />
                 </picture>
-                <h1 class="hero__title">Learn Any <br> Foreign Language</h1>
-                <!-- <svg>
-                <use></use>
-            </svg> -->
-                <p class="hero__text">With our teachers who write a program for each student, you will be able to make
-                    your
-                    first sketch after
-                    the first lesson.</p>
-                <button class="button hero--button" type="button">Get started</button>
+                <div>
+                    <div>
+                        <h1 class="hero__title">Learn Any Foreign Language</h1>
+                    <img class="hero__img" src="./images/icon/lamp (1).png" alt="lamp" width="42" height="50">
+                    </div>
+                    
+                    <p class="hero__text">With our teachers who write a program for each student, you will be able to
+                        make
+                        your
+                        first sketch after
+                        the first lesson.</p>
+                    <button class="button hero--button" type="button">Get started</button>
+                </div>
+
             </div>
         </section>
 
@@ -281,8 +305,10 @@
                         </picture>
 
                         <h3 class="h3">Self-study online course</h3>
-                        <p>Start learning English online in live classes with qualified EC teachers and students from all over the world.</p>
-                        <button class="pricing__btn" type="button"><span class="pricing__btn-price">£5.99</span>per month</button>
+                        <p>Start learning English online in live classes with qualified EC teachers and students from
+                            all over the world.</p>
+                        <button class="pricing__btn" type="button"><span class="pricing__btn-price">£5.99</span>per
+                            month</button>
                     </li>
                     <li class="pricing__item">
                         <picture>
@@ -298,11 +324,11 @@
                                 " src="./images/320/pricing/pricing2@1x.png" alt=">Lesson-bro"
                                 sizes="(min-width: 320px) 256px" />
                         </picture>
-                        
-                       
+
                         <h3 class="h3">Live online classes</h3>
                         <p>Interactive group classes with expert teachers. Free 7-day trial</p>
-                        <button class="pricing__btn" type="button"><span class="pricing__btn-price">£12.99</span>per month</button>
+                        <button class="pricing__btn" type="button"><span class="pricing__btn-price">£12.99</span>per
+                            month</button>
                     </li>
                     <li class="pricing__item">
                         <picture>
@@ -315,41 +341,69 @@
                                 ./images/320/pricing/pricing3@1x.png 240w,
                                 ./images/320/pricing/pricing3@2x.png 482w,
                                 ./images/320/pricing/pricing3@3x.png 722w
-                                " src="./images/320/pricing/pricing3@1x.png" alt="> Webinar-bro"
+                                " src="./images/320/pricing/pricing3@1x.png" alt=">Webinar-bro"
                                 sizes="(min-width: 320px) 240px" />
                         </picture>
-                        <img src="" alt="">
+
                         <h3 class="h3">Personal Tuition</h3>
                         <p>Online one-to-one English tutoring – enjoy our first session for only $1</p>
-                        <button class="pricing__btn" type="button"><span class="pricing__btn-price">£20.99</span>per month</button>
+                        <button class="pricing__btn" type="button"><span class="pricing__btn-price">£20.99</span>per
+                            month</button>
                     </li>
                 </ul>
             </div>
 
         </section>
-        <section>
-            <img src="" alt="">
-            <h2 class="h2">Contzzsact Us</h2>
-            <p>Discover your current English level by taking our free online English test.Sign up to our newsletter for
-                learning tips and free resources</p>
-            <form action=""></form>
-            <button class="button" type="button">Subscribe</button>
-            <hr />
+        <section class="contact-us">
+            <div class="container">
+                <h2 class="h2">Contact Us</h2>
+                <picture>
+                    <source srcset="
+                    ./images/320/contact-us/contact@1x.webp 252w,
+                    ./images/320/contact-us/contact@2x.webp 506w,
+                    ./images/320/contact-us/contact@3x.webp 758w
+                    " type="image/webp" media="(min-width: 320px)" sizes="(min-width: 320px) 252px" />
+                    <img srcset="
+                    ./images/320/contact-us/contact@1x.png 252w,
+                    ./images/320/contact-us/contact@1x.png 506w,
+                    ./images/320/contact-us/contact@1x.png 758w
+                        " src="./images/320/contact-us/contact@1x.png" alt=">contact-us"
+                        sizes="(min-width: 320px) 252px" />
+                </picture>
+
+
+                <p>Discover your current English level by taking our free online English test.Sign up to our newsletter
+                    for learning tips and free resources</p>
+                <form class="form_mail" name="form-mail" novalidate>
+                    <label for="user-email"></label>
+                    <input class="form-mail__input" type="email" name="email" id="user-email"
+                        placeholder="Enter Your E-mail" required />
+                    <button class="form-mail__button" type="submit">Subscribe</button>
+                </form>
+            </div>
         </section>
+
     </main>
-    <footer>
-        <a href="">Britlex</a>
-        <ul>
-            <li>
-                <a href="">Terms and Conditions • </a>
-            </li>
-            <li>
-                <a href="">Privacy Policy •</a>
-            </li>
-            <li>
-                <a href="">Cookie Policy</a>
-            </li>
-        </ul>
+
+    <footer class="footer">
+        <div class="container">
+            <hr />
+            <a class="logo footer__logo" href=""><span class="logo__accent">Brit</span>lex</a>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__link" href="">Terms and Conditions</a>
+                    <p>•</p>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="">Privacy Policy</a>
+                    <p>•</p>
+                </li class="footer__item">
+                <li>
+                    <a class="footer__link" href="">Cookie Policy</a>
+                </li>
+            </ul>
+        </div>
+
     </footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

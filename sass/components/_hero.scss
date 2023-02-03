@@ -1,4 +1,5 @@
 .hero {
+    margin: 0 auto;
     padding-bottom: 51px;
     text-align: center;
 
@@ -9,6 +10,12 @@
         color: $black;
 
         margin: 16px 0 20px;
+
+        @media screen and (max-width: 320px) {
+            padding: 0 50px;
+        }
+
+
     }
 
     &__text {
@@ -21,5 +28,69 @@
         width: 289px;
         height: 60px;
         margin: 0;
+    }
+
+
+    // 575
+    @media screen and (min-width: 575px) {
+
+        &__title {
+            font-size: 34px;
+            line-height: calc(45/34);
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: calc(24/16);
+            margin-bottom: 35px;
+        }
+
+        & &--button {
+            width: 305px;
+            height: 75px;
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+        text-align: left;
+
+        & .container {
+            display: flex;
+            flex-flow: row-reverse;
+        }
+
+        &__title {
+            position: relative;
+            width: 217px;
+
+            font-size: 36px;
+            line-height: calc(45/36);
+
+            // ::after {
+            //     position: absolute;
+            //     content: "";
+            //     width: 42px;
+            //     height: 50px;
+
+            // }
+        }
+        &__img {
+            width: 48px;
+            height: 58px;
+        }
+
+        &__text {
+            width: 334px;
+
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+
+        & &--button {
+            width: 236px;
+            height: 65px;
+            margin: 0;
+        }
     }
 }

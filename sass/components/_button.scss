@@ -10,4 +10,10 @@ background: $buttons;
 color: $white;
 border-radius: 5px;
 
+&:hover,
+&:focus {
+    background: $num;
+    @include transition($transition-property: background);
+}
+
 }

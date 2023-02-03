@@ -1,5 +1,13 @@
 .skills {
     padding-bottom: 50px;
+    
+    & .h3 {
+        padding-left: 13px;
+    }
+
+    &__list{
+        margin-top: 32px;
+    }
 
     &__item {
         background: #F5F5F5;
@@ -10,6 +18,5 @@
 
     &__text {
         padding: 3px 16px  20px 16px;
-        // margin-bottom: 20px;
     }
 }
