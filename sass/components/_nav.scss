@@ -1,0 +1,26 @@
+.nav {
+
+
+    &__list {
+        display: flex;
+        flex-flow: nowrap;
+        gap: 30px;
+    }
+
+
+    &__link {
+        font-size: 16px;
+        color: $buttons;
+
+        &:hover,
+        &:focus {
+            color: $icons;
+            @include transition($transition-property: color);
+        }
+
+        @media screen and (min-width: 1600px) {
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+}

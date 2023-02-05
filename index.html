@@ -10,17 +10,17 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__menu">
 
                 <a class="logo" href=""><span class="logo__accent">Brit</span>lex</a>
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="34" height="19" aria-label="Перемикач мобільного меню">
-                        <use href="./images/icon/icons.svg#icon-open"></use>
+                    <svg class="menu__svg" aria-label="Перемикач мобільного меню">
+                        <use href="./images/icon/icons.svg#icon-icon-open"></use>
                     </svg>
                 </button>
-            </div>
+
 
             <div class="menu-container js-menu-container" id="mobile-menu">
                 <button class="menu-toggle js-close-menu">
@@ -49,45 +49,47 @@
             </div>
 
 
+            <div class="header__wrapper-nav">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Skills</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">About Us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Pricing</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__btn" type="button">Let’s Talk</button>
+            </div>
+        </div>
 
-            <!-- <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Skills</a>
-                </li>
-                <li>
-                    <a href="">About Us</a>
-                </li>
-                <li>
-                    <a href="">Pricing</a>
-                </li>
-                <li>
-                    <a href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <button type="button">Let’s Talk</button> -->
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="container">
                 <picture>
-                    <!-- 1334
-                     -->
+                    <!-- 1334-->
                     <source srcset="
                     ./images/1334/hero/hero@1x.webp 660w,
                     ./images/1334/hero/hero@2x.webp 1322w,
                     ./images/1334/hero/hero@3x.webp 1982w
-                    " type="image/webp" media="(min-width: 1334px)" sizes="(min-width: 1334px) 460px" />
+                    " type="image/webp" media="(min-width: 1600px)" sizes="(min-width: 1600px) 660px" />
                     <source srcset="
                     ./images/1334/hero/hero@1x.png 660w,
                     ./images/1334/hero/hero@2x.png 1322w,
                     ./images/1334/hero/hero@3x.png 1982w 
-                    " media="(min-width: 1334px)" sizes="(min-width: 1334px) 660px" />
+                    " media="(min-width: 1600px)" sizes="(min-width: 1600px) 660px" />
                     <!-- 992 -->
                     <source srcset="
                     ./images/992/hero/hero@1x.webp 460w,
@@ -128,7 +130,7 @@
                     ./images/320/hero/hero@2x.webp 598w,
                     ./images/320/hero/hero@3x.webp 896w
                     " type="image/webp" media="(min-width: 320px)" sizes="(min-width: 320px) 298px" />
-                    <img srcset="
+                    <img class="hero__img" srcset="
                     ./images/320/hero/hero@1x.png 298w,
                     ./images/320/hero/hero@2x.png 598w,
                     ./images/320/hero/hero@3x.png 896w
@@ -136,11 +138,14 @@
                         sizes="(min-width: 320px) 298px" />
                 </picture>
                 <div>
-                    <div>
-                        <h1 class="hero__title">Learn Any Foreign Language</h1>
-                    <img class="hero__img" src="./images/icon/lamp (1).png" alt="lamp" width="42" height="50">
-                    </div>
-                    
+                    <!-- <div> -->
+                    <h1 class="hero__title">Learn Any Foreign Language</h1>
+                    <svg class="hero__svg">
+                        <use href="./images/icon/icons.svg#icon-bulb-icon"></use>
+                    </svg>
+
+                    <!-- </div> -->
+
                     <p class="hero__text">With our teachers who write a program for each student, you will be able to
                         make
                         your
