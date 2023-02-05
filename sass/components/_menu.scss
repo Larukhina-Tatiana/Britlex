@@ -44,22 +44,21 @@
 
 
 
-    // &:hover &__icon-cross,
-    // &:focus &__icon-cross,
-    // &:hover &__icon-menu,
-    // &:focus &__icon-menu {
-    //     fill: $accent-color;
-    //     @include transition($transition-property: fill);
-    // }
+    &:hover &__icon-cross,
+    &:focus &__icon-cross,
+    &:hover &__icon-menu,
+    &:focus &__icon-menu {
+        fill: $buttons;
+        @include transition($transition-property: fill);
+    }
 
     &__icon-cross {
         fill: $icons;
     }
 
     @media screen and (min-width: 992px) {
-        
-            display: none;
-       
+        display: none;
+
     }
 }
 
@@ -73,16 +72,23 @@
     &__link {
         display: inline-block;
         @include font-style($font-weight: 400, $font-size: 6vw, $line-height: calc(14/8), $color: $icons, $background-color: null);
-        // &--active,
-        // &--accent:hover,
-        // &--accent:focus {
-        //     color: $accent-color;
-        // }
+        &--active,
+        &--accent:hover,
+        &--accent:focus {
+            color: $buttons;
+        }
     }
 
     &__svg {
         width: 34px;
         height: 18px;
+        fill: $icons;
+
+        &:hover,
+        &:focus {
+            fill: $buttons;
+            @include transition($transition-property: fill);
+        }
     }
 
     @media (min-width: 575px) {
@@ -98,9 +104,6 @@
             height: 17px;
         }
     }
-
-
-    
 
 }
 
