@@ -29,6 +29,10 @@
         width: 289px;
         height: 60px;
         margin: 0;
+
+        font-size: 16px;
+
+        border-radius: 5px;
     }
 
 
@@ -50,6 +54,8 @@
         & &--button {
             width: 305px;
             height: 75px;
+            font-size: 18px;
+
 
         }
     }
@@ -143,7 +149,7 @@
             height: 80px;
 
             font-size: 24px;
-            border-radius: 5px;
+
 
         }
     }

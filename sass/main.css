@@ -441,6 +441,8 @@ body {
   width: 289px;
   height: 60px;
   margin: 0;
+  font-size: 16px;
+  border-radius: 5px;
 }
 @media screen and (min-width: 575px) {
   .hero {
@@ -458,6 +460,7 @@ body {
   .hero .hero--button {
     width: 305px;
     height: 75px;
+    font-size: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -533,7 +536,6 @@ body {
     width: 292px;
     height: 80px;
     font-size: 24px;
-    border-radius: 5px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -577,16 +579,47 @@ body {
   height: 50px;
   margin: 0 16px 0;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
   background: #263238;
   color: #FFFFFF;
   border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  .button {
+    transform: rotate(-0.26deg);
+  }
 }
 .button:hover, .button:focus {
   background: #2A3246;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 575px) {
+  .button {
+    width: 200px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .button {
+    width: 178px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .button {
+    width: 196px;
+    height: 57px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .button {
+    width: 218px;
+    height: 60px;
+    font-size: 20px;
+  }
 }
 
 .skills {
@@ -604,8 +637,64 @@ body {
   padding-bottom: 45px;
   margin-bottom: 21px;
 }
+@media screen and (max-width: 574px) {
+  .skills__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .skills__text {
   padding: 3px 16px 20px 16px;
+}
+@media screen and (min-width: 575px) {
+  .skills {
+    padding-bottom: 84px;
+  }
+  .skills .h3 {
+    padding-left: 15px;
+  }
+  .skills__list {
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+  }
+  .skills__item {
+    height: 534px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: calc((100% - 30px) / 2);
+    padding: 0;
+    margin-bottom: 0%;
+  }
+  .skills__text {
+    font-size: 12px;
+    padding: 3px 44px 12px 15px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .skills {
+    padding-bottom: 52px;
+  }
+  .skills .h3 {
+    padding-left: 37px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills {
+    padding-bottom: 106px;
+  }
+  .skills .h3 {
+    padding-left: 53px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills {
+    padding-bottom: 282px;
+  }
+  .skills .h3 {
+    padding-left: 92px;
+  }
 }
 
 .h2 {
@@ -614,6 +703,24 @@ body {
   line-height: 3.3333333333;
   color: #000000;
   text-align: center;
+}
+@media screen and (min-width: 575px) {
+  .h2 {
+    font-size: 30px;
+    line-height: 2.6666666667;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h2 {
+    font-size: 36px;
+    line-height: 2.2222222222;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .h2 {
+    font-size: 48px;
+    line-height: 1.6666666667;
+  }
 }
 
 .h3 {
