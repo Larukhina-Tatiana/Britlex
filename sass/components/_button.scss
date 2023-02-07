@@ -1,47 +1,63 @@
 .button {
-width: 178px;
-height: 50px;
-margin: 0 16px 0;
+    // width: 178px;
+    // height: 50px;
+    margin: 0 16px 0;
 
-font-weight: 500;
-font-size: 14px;
+    font-weight: 500;
+    font-size: 14px;
 
-background: $buttons;
-color: $white;
-border-radius: 5px;
+    background: $buttons;
+    color: $white;
+    border-radius: 5px;
 
-@media screen and (max-width: 767px) {
-    transform: rotate(-0.26deg);
-}
+    @media screen and (max-width: 767px) {
+        &--marging {
+            margin-top: 150px;
+        }
+    }
 
 
-&:hover,
-&:focus {
-    background: $num;
-    @include transition($transition-property: background);
-}
+    &:hover,
+    &:focus {
+        background: $num;
+        @include transition($transition-property: background);
+    }
 
-@media screen and (min-width: 575px) {
-    width: 200px;
-    height: 50px;
-}
+    @media screen and (min-width: 575px) {
+        width: 200px;
+        height: 50px;
 
-@media screen and (min-width: 767px) {
-    width: 178px;
-    height: 50px;   
-    font-size: 16px;
-}
+        margin-bottom: 36px;
+    }
 
-@media screen and (min-width: 992px) {
-    width: 196px;
-    height: 57px;
-    font-size: 18px;
-}
 
-@media screen and (min-width: 1600px) {
-    width: 218px;
-    height: 60px;
-    font-size: 20px;   
-}
+    @media screen and (min-width: 767px) {
+
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        &--marging {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 575px),
+    (min-width: 767px) {
+        width: 178px;
+        height: 50px;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: 196px;
+        height: 57px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 218px;
+        height: 60px;
+        font-size: 20px;
+    }
 
 }

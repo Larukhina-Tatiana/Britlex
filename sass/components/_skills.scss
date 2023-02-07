@@ -3,10 +3,12 @@
 
     & .h3 {
         padding-left: 13px;
+        // outline: 1px solid red;
     }
 
     &__list {
         margin-top: 32px;
+        // outline: 1px solid green;
     }
 
     &__item {
@@ -14,17 +16,20 @@
         border-radius: 5px;
         padding-bottom: 45px;
         margin-bottom: 21px;
+        // outline: 1px solid blueviolet;
     }
 
     @media screen and (max-width: 574px) {
         &__img {
             margin-left: auto;
             margin-right: auto;
+            // outline: 1px solid brown;
         }
     }
 
     &__text {
         padding: 3px 16px 20px 16px;
+        // outline: 1px solid tomato;
     }
 
     @media screen and (min-width: 575px) {
@@ -33,6 +38,7 @@
 
         & .h3 {
             padding-left: 15px;
+
         }
 
         &__list {
@@ -56,7 +62,8 @@
         &__text {
             font-size: 12px;
 
-            padding: 3px 44px 12px 15px;
+            padding: 0 5px 10px 15px;
+
         }
     }
 
@@ -65,9 +72,65 @@
         padding-bottom: 52px;
 
         & .h3 {
-            padding-left: 37px;
+            padding-left: 17px;
+            height: 70px;
         }
+
+        &__text {
+            font-size: 13px;
+        
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 8px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 3 / 2;
+            width: 224px;
+            height: 662px;
+        }
+
+        .div2 {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 227px;
+            height: 441px;
+        }
+
+        .div3 {
+            grid-area: 1 / 3 / 2 / 4;
+            width: 228px;
+            height: 442px;
+        }
+
+        .div4 {
+            grid-area: 2 / 2 / 3 / 4;
+            width: 462px;
+            height: 210px;
+        }
+
+        
+
+        .div5 {
+            display: flex;
+            flex-flow: row-reverse;
+            align-items: self-end;
+        }
+
+        .div5 .skills__text {
+            width: 250px;
+            height: 69px;
+            padding: 0 0px 0 0px;
+        }
+
     }
+
+
+
 
     @media screen and (min-width: 992px) {
 
@@ -78,7 +141,7 @@
         }
     }
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1600px) {
 
         padding-bottom: 282px;
 

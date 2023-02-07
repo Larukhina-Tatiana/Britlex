@@ -5,4 +5,9 @@ line-height: calc(80/18);
 
 color: $buttons;
 
+@media screen and (min-width: 767px) {
+    font-size: 20px;
+}
+
+
 }
