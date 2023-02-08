@@ -1,6 +1,7 @@
 .button {
     // width: 178px;
     // height: 50px;
+    text-align: center;
     margin: 0 16px 0;
 
     font-weight: 500;
@@ -52,6 +53,7 @@
         width: 196px;
         height: 57px;
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     @media screen and (min-width: 1600px) {

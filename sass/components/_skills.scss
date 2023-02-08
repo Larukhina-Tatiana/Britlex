@@ -129,16 +129,65 @@
 
     }
 
-
-
-
     @media screen and (min-width: 992px) {
 
         padding-bottom: 106px;
 
         & .h3 {
-            padding-left: 53px;
+            padding-left: 29px;
+            font-size: 22px;
+            line-height: calc(80/22);
         }
+
+        &__text {
+            font-size: 14px;
+            margin-bottom: 11px;
+            padding: 0 15px 0 0;
+        }
+
+        &__list {
+
+            grid-column-gap: 5px;
+            grid-row-gap: 8px;
+        }
+
+        .div1 {
+
+            width: 303px;
+            height: 696px;
+        }
+
+        .div2 {
+
+            width: 302px;
+            height: 441px;
+        }
+
+        .div3 {
+
+            width: 304px;
+            height: 442px;
+        }
+
+        .div4 {
+
+            width: 616px;
+            height: 242px;
+        }
+
+        
+
+        .div5 {
+            justify-content: space-evenly;
+        }
+
+        .div5 .skills__text {
+            width: 289px;
+            height: 69px;
+            margin-top: 20px;
+
+        }
+
     }
 
     @media screen and (min-width: 1600px) {
