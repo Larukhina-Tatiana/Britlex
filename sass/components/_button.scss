@@ -13,7 +13,7 @@
 
     @media screen and (max-width: 767px) {
         &--marging {
-            margin-top: 150px;
+            margin-top: 152px;
         }
     }
 
@@ -28,7 +28,7 @@
         width: 200px;
         height: 50px;
 
-        margin-bottom: 36px;
+        margin-bottom: 26px;
     }
 
 
@@ -60,6 +60,11 @@
         width: 218px;
         height: 60px;
         font-size: 20px;
+
+        &--marging {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
     }
 
 }

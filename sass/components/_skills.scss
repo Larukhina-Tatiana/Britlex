@@ -42,6 +42,7 @@
         }
 
         &__list {
+            margin-top: 26px;
 
             display: flex;
             flex-flow: wrap;
@@ -82,6 +83,7 @@
         }
 
         &__list {
+            margin-top: 50px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -146,7 +148,7 @@
         }
 
         &__list {
-
+            margin-top: 58px;
             grid-column-gap: 5px;
             grid-row-gap: 8px;
         }
@@ -190,12 +192,67 @@
 
     }
 
-    @media screen and (min-width: 1600px) {
+    
+    @media screen and (min-width:1600px) {
 
         padding-bottom: 282px;
 
         & .h3 {
-            padding-left: 92px;
+            padding-left: 42px;
+            font-size: 30px;
+            line-height: calc(80/30);
         }
+
+        &__text {
+            font-size: 16px;
+            margin-bottom: 11px;
+            padding: 0 42px 0 42px;
+        }
+
+        &__list {
+            margin-top: 96px;
+
+            grid-column-gap: 5px;
+            grid-row-gap: 8px;
+        }
+
+        .div1 {
+
+            width: 434px;
+            height: 894px;
+        }
+
+        .div2 {
+
+            width: 434px;
+            height: 530px;
+        }
+
+        .div3 {
+
+            width: 434px;
+            height: 532px;
+        }
+
+        .div4 {
+
+            width: 884px;
+            height: 342px;
+        }
+
+        
+
+        .div5 {
+            justify-content: space-between;
+        }
+
+        .div5 .skills__text {
+            width: 328px;
+            height: 72px;
+            padding-left: 42px;
+           
+
+        }
+
     }
 }
